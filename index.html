@@ -2,21 +2,67 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <!--This is a typical mobile optimized site-->
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/index.css">
         <title>Personal Blog Website</title>
         <meta name="description" content="Example">
     </head>
     <body>
-        <header>
-            <p>Header</p>
-        </header>
+        <div class="big-container">
 
+            <header>
+                <h1 class="header-title">Udacity Personal Blog</h1>
+                <h2 class="header-subheader">Blogs about random stuff</h2>
+            </header>
 
-        <div class="container">
-            <p>Hello World</p>
+            <nav class="box">
+                <a href="latest-blog-post.html" class="nav-link nav-hide">Latest Post</a>
+                <a href="design.html" class="nav-link nav-hide">Design</a>
+                <div class="nav-sidebar">
+                    <div class="sidebar-pages">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="design.html" class="nav-link">Design</a>
+                    </div>
+                    <h2 class="sidebar-header">Latest Post</h2>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item"><a href="blog-post.html">First Blog Post</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Second Blog Post</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Third Blog Post</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+    
+            <div class="main-container">
+                
+                <div class="box blog-card" id="post-1">
+                    <img src="img/" alt="" class="blog-img">
+                    <div class="blog-card-text">
+                        <h2 class="blog-title">Toy name boy</h2>
+                        <h4 class="blog-date">1/3/2023</h4>
+                        <p>There once was a toy name boy</p>
+                        <a href="blog-post.html" class="button">Read More Here</a>
+                    </div>
+                </div>
+
+                <div class="box blog-card" id="post-2">
+                    <img src="img/" alt="" class="blog-img">
+                    <div class="blog-card-text">
+                        <h2 class="blog-title">Hello there again</h2>
+                        <h4 class="blog-date">5/20/2023</h4>
+                        <p>They are met again when they said hello</p>
+                        <a href="blog-post.html" class="button">Read More Here</a>
+                    </div>
+                </div>
+
+            </div>
+    
+            <footer class="box">
+                <p>Footer</p>
+            </footer>
+
         </div>
-
-        <footer>
-            <p>Footer</p>
-        </footer>
+        
     </body>
 </html>
